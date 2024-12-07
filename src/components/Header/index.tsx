@@ -12,7 +12,7 @@ export const Header = () => {
 			</div>
 			<div className='contacts'>
 				<div className='adress neon'>
-					<img src='/src/assets/mapicon.svg' />
+					<img src='./src/assets/mapicon.svg' />
 					<a className='linkMap' href='https://yandex.ru/maps/-/CHAciX2J'>
 						г.Воронеж,<br></br> ул.Ленинградская, д.118
 					</a>
