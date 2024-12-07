@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'BOWLER-Regular';
+	src: url('/fonts/Bowler.ttf') format('truetype');
+}
+
+.blockName {
+	font-family: 'BOWLER-Regular', sans-serif;
+	font-size: 25px;
+	margin-top: -14px;
+	margin-left: 20px;
+	padding: 0px 10px;
+	background: white;
+	width: 116px;
+}
+
+.containerServices {
+	max-width: 1000px;
+	height: 100%;
+	margin: 60px auto;
+	border: 2px solid black;
+	padding: 0px 15px;
+	padding-bottom: 60px;
+}

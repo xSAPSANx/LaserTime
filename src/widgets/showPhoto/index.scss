@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'BOWLER-Regular';
+	src: url('/fonts/Bowler.ttf') format('truetype');
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.titleServices {
+	display: inline-block;
+	font-family: 'BOWLER-Regular', sans-serif;
+	margin: 30px auto;
+}
+
+.content {
+	display: flex;
+
+	.arrowBlock {
+		width: 60px;
+		height: 0px;
+		margin-top: 160px;
+
+		.arrow {
+			width: 60px;
+			transform: rotate(180deg);
+		}
+	}
+
+	.photoServices {
+		width: 400px;
+		margin: 0px auto;
+	}
+}
