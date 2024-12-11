@@ -9,7 +9,7 @@ type propsPhoto = {
 export const ShowPhoto = ({ title, photoOld, photoNew }: propsPhoto) => {
 	return (
 		<div className='titleContainer'>
-			<div className='titleServices'>{title}</div>
+			<h3 className='titleServices'>{title}</h3>
 			<div className='content'>
 				<img className='photoServices' src={photoOld} />
 				<div className='arrowBlock'>

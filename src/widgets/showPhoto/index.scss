@@ -6,12 +6,37 @@
 .titleContainer {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .titleServices {
 	display: inline-block;
 	font-family: 'BOWLER-Regular', sans-serif;
 	margin: 30px auto;
+	position: relative; // Включаем относительное позиционирование для работы с псевдоэлементами
+	text-align: center;
+	color: #000; // Цвет текста, можно изменить по желанию
+
+	// Добавляем линии с помощью псевдоэлементов
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 50%; // Центрируем линии по вертикали относительно текста
+		width: 50px; // Длина линии
+		height: 2px; // Толщина линии
+		background-color: #000; // Цвет линии
+	}
+
+	// Линия слева
+	&::before {
+		left: -60px; // Отступ линии от текста
+	}
+
+	// Линия справа
+	&::after {
+		right: -60px; // Отступ линии от текста
+	}
 }
 
 .content {

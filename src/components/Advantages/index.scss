@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'BOWLER-Regular';
+	src: url('/fonts/Bowler.ttf') format('truetype');
+}
+
+.features-block {
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); // Адаптивная сетка
+	gap: 20px;
+	max-width: 1000px;
+	margin: 40px auto;
+
+	.feature-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+
+		.feature-icon {
+			width: 50px;
+			height: 50px;
+			object-fit: contain;
+		}
+
+		.feature-content {
+			.feature-title {
+				font-size: 1.2rem;
+				font-family: 'BOWLER-Regular', sans-serif;
+				color: #e30613; // Цвет заголовка
+				margin: 0 0 10px;
+				font-weight: bold;
+			}
+
+			.feature-description {
+				font-size: 1rem;
+				color: #333; // Цвет текста
+			}
+		}
+	}
+}

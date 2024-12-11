@@ -7,8 +7,8 @@ export const Header = () => {
 			<img className='logo' src={icon} />
 			<div className='linkBlock neon'>
 				<a href='/'>О нас</a>
-				<a href='/'>Услуги</a>
-				<a href='/'>Цена</a>
+				<a href='#features-block'>Преимущества</a>
+				<a href='/'>Примеры работ</a>
 			</div>
 			<div className='contacts'>
 				<div className='adress neon'>

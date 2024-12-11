@@ -1,4 +1,9 @@
+@font-face {
+	font-family: 'ROBOTOSLAB';
+	src: url('/public/fonts/RobotoSlab.ttf') format('truetype');
+}
+
 body {
-	margin: 20px;
-	margin-right: 45px;
+	font-family: 'ROBOTOSLAB', sans-serif;
+	margin: 0px;
 }
