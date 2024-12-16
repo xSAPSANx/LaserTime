@@ -3,9 +3,36 @@
 	src: url('/fonts/Bowler.ttf') format('truetype');
 }
 
+a {
+	text-decoration: none;
+}
+
+@mixin neon-effect($color) {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 4px;
+		background: $color;
+		opacity: 0;
+		box-shadow: 0 0 10px $color, 0 0 20px $color, 0 0 30px $color;
+		border-radius: 2px;
+		transition: opacity 0.3s ease, transform 0.3s ease;
+		transform: scaleX(0);
+		transform-origin: left center;
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transform: scaleX(1);
+		width: 100%;
+	}
+}
+
 .container {
 	margin: 20px;
-	margin-right: 45px;
+	margin-right: 25px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -16,9 +43,10 @@
 
 	.linkBlock {
 		font-family: 'BOWLER-Regular', sans-serif;
-		font-size: 18px;
+		font-size: 20px;
 		display: flex;
 		justify-content: center;
+		margin-top: auto;
 		margin-left: 40px;
 
 		a {
@@ -30,30 +58,6 @@
 		}
 	}
 
-	// Миксин для подсветки
-	@mixin neon-effect($color) {
-		&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			height: 4px; /* Толщина линии */
-			background: $color;
-			opacity: 0;
-			box-shadow: 0 0 10px $color, 0 0 20px $color, 0 0 30px $color;
-			border-radius: 2px;
-			transition: opacity 0.3s ease, transform 0.3s ease;
-			transform: scaleX(0); /* Начальное состояние */
-			transform-origin: left center; /* Анимация начинается слева */
-		}
-
-		&:hover::after {
-			opacity: 1;
-			transform: scaleX(1); /* Линия расширяется до ширины текста */
-			width: 100%;
-		}
-	}
-
 	.contacts {
 		font-family: 'BOWLER-Regular', sans-serif;
 		display: flex;
@@ -62,7 +66,7 @@
 		.adress {
 			display: flex;
 			margin-top: auto;
-			margin-right: 70px;
+			margin-right: 50px;
 
 			.linkMap {
 				position: relative;
@@ -121,6 +125,109 @@
 	.neon {
 		a {
 			@include neon-effect(#e30613);
+		}
+	}
+}
+
+@media (max-width: 1430px) {
+	.container {
+		.linkBlock,
+		.contacts {
+			display: none;
+		}
+	}
+
+	.mobile-menu {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		z-index: 1000;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: right 0.3s ease;
+
+		&.open {
+			right: 0;
+		}
+
+		.mobile-menu-links {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			a {
+				font-family: 'BOWLER-Regular', sans-serif;
+				font-size: 20px;
+				color: black;
+				text-decoration: none !important;
+				margin: 10px 0;
+				position: relative;
+				display: inline-block;
+
+				@include neon-effect(#e30613);
+			}
+
+			.adress {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 20px;
+
+				.linkMap {
+					font-size: 16px;
+					color: black;
+					text-decoration: none;
+					text-align: center;
+
+					@include neon-effect(#e30613);
+				}
+
+				img {
+					width: 32px;
+					height: 32px;
+					margin-bottom: 10px;
+				}
+			}
+
+			.contactsBlock {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 20px;
+
+				.blockMessenger {
+					display: flex;
+					flex-direction: column;
+
+					.linkMessenger {
+						display: block;
+						margin-bottom: 10px;
+						text-decoration: none;
+
+						&.whatsApp {
+							@include neon-effect(#2cb742);
+						}
+
+						&.telegram {
+							@include neon-effect(#229ed9);
+						}
+					}
+				}
+
+				.tel {
+					font-size: 18px;
+					color: black;
+					text-decoration: none;
+					margin-top: 10px;
+
+					@include neon-effect(#e30613);
+				}
+			}
 		}
 	}
 }
