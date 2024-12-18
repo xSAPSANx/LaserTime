@@ -31,9 +31,9 @@ export const BurgerModal: React.FC<BurgerModalProps> = ({ isMenuOpen, scrollToSe
 	return (
 		<div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
 			<nav className='mobile-menu-links'>
-				<Link to='/' onClick={() => handleLinkClick('#about', offsets)}>
+				{/* <Link to='/' onClick={() => handleLinkClick('#about', offsets)}>
 					О нас
-				</Link>
+				</Link> */}
 				<Link to='/' onClick={() => handleLinkClick('#features-block', offsets)}>
 					Преимущества
 				</Link>

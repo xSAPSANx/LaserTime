@@ -33,9 +33,9 @@ export const Header = () => {
 			<div className='container'>
 				<img className='logo' src={icon} />
 				<div className='linkBlock neon'>
-					<Link to='/' onClick={() => scrollToSection('#about', offsets['#about'])}>
+					{/* <Link to='/' onClick={() => scrollToSection('#about', offsets['#about'])}>
 						О нас
-					</Link>
+					</Link> */}
 					<Link to='/' onClick={() => scrollToSection('#features-block', offsets['#features-block'])}>
 						Преимущества
 					</Link>
