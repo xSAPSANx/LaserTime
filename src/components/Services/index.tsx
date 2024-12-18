@@ -3,7 +3,7 @@ import { ShowPhoto } from '../../widgets/showPhoto'
 
 export const Services = () => {
 	return (
-		<div className='containerServices'>
+		<div className='containerServices' id='containerServices'>
 			<h2 className='blockName'>Примеры работ</h2>
 			<ShowPhoto
 				title={'Промышленное оборудование'}
