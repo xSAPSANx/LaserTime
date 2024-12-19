@@ -127,7 +127,13 @@
 
 @media (max-width: 550px) {
 	.content .photoServices {
-		width: 150px;
+		width: 180px;
+	}
+
+	@media (max-width: 500px) {
+		.content .photoServices {
+			width: 150px;
+		}
 	}
 
 	.content .arrowBlock .arrow {
@@ -160,7 +166,7 @@
 
 @media (max-width: 450px) {
 	.content .photoServices {
-		width: 100px;
+		width: 130px;
 	}
 
 	.content .arrowBlock .arrow {
@@ -174,5 +180,11 @@
 
 	.arrowBlock .arrow {
 		width: 15px;
+	}
+}
+
+@media (max-width: 380px) {
+	.content .photoServices {
+		width: 100px;
 	}
 }
