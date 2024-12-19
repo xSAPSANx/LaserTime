@@ -60,6 +60,10 @@
 		margin: 0 auto;
 	}
 }
+.no-title::before,
+.no-title::after {
+	background-color: white;
+}
 
 @media (max-width: 940px) {
 	.content .photoServices {

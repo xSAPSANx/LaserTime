@@ -3,13 +3,13 @@ import './index.scss'
 type propsPhoto = {
 	photoOld: string
 	photoNew: string
-	title: string
+	title?: string
 }
 
 export const ShowPhoto = ({ title, photoOld, photoNew }: propsPhoto) => {
 	return (
 		<div className='titleContainer'>
-			<h3 className='titleServices'>{title}</h3>
+			<h3 className={`titleServices ${!title ? 'no-title' : ''}`}>{title || ' '}</h3>
 			<div className='content'>
 				<img className='photoServices' src={photoOld} />
 				<div className='arrowBlock'>
