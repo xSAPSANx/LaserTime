@@ -13,7 +13,6 @@ export const ShowPhoto = ({ title, photoOld, photoNew }: propsPhoto) => {
 			<div className='content'>
 				<img className='photoServices' src={photoOld} />
 				<div className='arrowBlock'>
-					{' '}
 					<img className='arrow' src='/assets/arrowimage.svg' />
 					<img className='arrow' src='/assets/arrowimage.svg' />
 					<img className='arrow' src='/assets/arrowimage.svg' />

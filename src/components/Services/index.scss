@@ -6,11 +6,11 @@
 .blockName {
 	font-family: 'BOWLER-Regular', sans-serif;
 	font-size: 25px;
-	margin-top: -14px;
-	margin-left: 20px;
-	padding: 0px 10px;
+	margin-top: -0.56em;
+	margin-left: 0.8em;
+	padding: 0px 0.4em;
 	background: white;
-	width: 257px;
+	width: 10.5em;
 }
 
 .containerServices {
@@ -20,4 +20,25 @@
 	border: 2px solid black;
 	padding: 0px 15px;
 	padding-bottom: 60px;
+}
+
+@media (max-width: 1100px) {
+	.containerServices {
+		margin: 60px 20px;
+	}
+}
+
+@media (max-width: 650px) {
+	.blockName {
+		font-size: 18px;
+		margin-top: -0.5em;
+		margin-left: 0.7em;
+		padding: 0px 0.35em;
+	}
+}
+
+@media (max-width: 440px) {
+	.blockName {
+		font-size: 14px;
+	}
 }

@@ -6,7 +6,7 @@
 .features-block {
 	display: grid;
 
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); // Адаптивная сетка
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	gap: 20px;
 	max-width: 1000px;
 	margin: 40px auto;
@@ -24,7 +24,7 @@
 
 		.feature-content {
 			.feature-title {
-				font-size: 1.2rem;
+				font-size: 19px;
 				font-family: 'BOWLER-Regular', sans-serif;
 				color: #e30613; // Цвет заголовка
 				margin: 0 0 10px;
@@ -32,9 +32,30 @@
 			}
 
 			.feature-description {
-				font-size: 1rem;
-				color: #333; // Цвет текста
+				font-size: 16px;
+				color: #333;
 			}
 		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.features-block {
+		margin: 40px 20px;
+	}
+}
+
+@media (max-width: 650px) {
+	.features-block .feature-item .feature-content .feature-title {
+		font-size: 15px;
+	}
+
+	.features-block .feature-item .feature-content .feature-description {
+		font-size: 12px;
+	}
+	.features-block {
+		display: grid;
+
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 }

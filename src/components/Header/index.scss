@@ -235,3 +235,9 @@ a {
 .no-scroll {
 	overflow: hidden;
 }
+
+@media (max-width: 530px) {
+	.container .logo {
+		width: 150px;
+	}
+}
