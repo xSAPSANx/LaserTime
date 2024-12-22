@@ -10,6 +10,7 @@ export const Services = () => {
 				photoOld={'/photo/cisternOld.jpg'}
 				photoNew={'/photo/cisternNew.jpg'}
 			/>
+			<ShowPhoto title={'Антиквариат'} photoOld={'/photo/cupOld.jpeg'} photoNew={'/photo/cupNew.jpeg'} />
 			<ShowPhoto title={'Детали автомобиля'} photoOld={'/photo/engineOld.jpeg'} photoNew={'/photo/engineNew.jpeg'} />
 			<ShowPhoto photoOld={'/photo/crugOld.jpeg'} photoNew={'/photo/crugNew.jpeg'} />
 			<ShowPhoto title={'Инструменты'} photoOld={'/photo/knifeOld.jpeg'} photoNew={'/photo/knifeNew.jpeg'} />
