@@ -25,13 +25,13 @@
 
 .delivery-title {
 	font-family: 'BOWLER-Regular', sans-serif;
-	font-size: 2rem;
+	font-size: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .delivery-subtitle {
-	font-size: 1.2rem;
+	font-size: 19px;
 }
 
 .delivery-image {
@@ -44,4 +44,64 @@
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+	.delivery-block {
+		margin: 60px 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.delivery-title {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 750px) {
+	.delivery-title {
+		font-size: 18px;
+	}
+	.delivery-subtitle {
+		font-size: 12px;
+	}
+	.delivery-block {
+		height: 350px;
+	}
+}
+
+@media (max-width: 600px) {
+	.delivery-title {
+		font-size: 14px;
+	}
+	.delivery-subtitle {
+		font-size: 9px;
+	}
+	.delivery-block {
+		height: 300px;
+	}
+}
+
+@media (max-width: 500px) {
+	.delivery-title {
+		font-size: 12px;
+	}
+	.delivery-subtitle {
+		font-size: 8px;
+	}
+	.delivery-block {
+		height: 200px;
+	}
+}
+
+@media (max-width: 400px) {
+	.delivery-title {
+		font-size: 12px;
+	}
+	.delivery-subtitle {
+		font-size: 8px;
+	}
+	.delivery-block {
+		height: 150px;
+	}
 }

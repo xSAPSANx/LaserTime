@@ -49,7 +49,7 @@ export const BurgerModal: React.FC<BurgerModalProps> = ({ isMenuOpen, scrollToSe
 				</div>
 				<div className='contactsBlock neon'>
 					<div className='blockMessenger'>
-						<a className='linkMessenger whatsApp' href='https://wa.me/89290068090'>
+						<a className='linkMessenger whatsApp' href='https://wa.me/+79290068090'>
 							WhatsApp
 						</a>
 						<a className='linkMessenger telegram' href='https://t.me/+79290068090'>
