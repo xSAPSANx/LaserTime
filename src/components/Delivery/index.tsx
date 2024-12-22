@@ -8,7 +8,7 @@ export const Delivery = () => {
 				<p className='delivery-subtitle'>Цена договорная</p>
 			</div>
 			<div className='delivery-image'>
-				<img src='/public/photo/carDelivery.webp' alt='Бесплатная доставка' className='delivery-van' />
+				<img src='/photo/carDelivery.webp' alt='Бесплатная доставка' className='delivery-van' />
 			</div>
 		</div>
 	)
