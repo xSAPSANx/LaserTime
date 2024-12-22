@@ -47,15 +47,21 @@
 
 @media (max-width: 650px) {
 	.features-block .feature-item .feature-content .feature-title {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.features-block .feature-item .feature-content .feature-description {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.features-block {
 		display: grid;
 
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+@media (max-width: 450px) {
+	.features-block .feature-item .feature-content .feature-title {
+		font-size: 10px;
 	}
 }
