@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'BOWLER-Regular';
+	src: url('/fonts/Bowler.ttf') format('truetype');
+}
+
+.delivery-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	color: black;
+	padding: 15px;
+	margin: 60px auto;
+	max-width: 1000px;
+	height: 400px;
+	border: 2px, solid;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.delivery-title {
+	font-family: 'BOWLER-Regular', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.delivery-subtitle {
+	font-size: 1.2rem;
+}
+
+.delivery-image {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.delivery-van {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
