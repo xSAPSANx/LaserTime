@@ -25,13 +25,16 @@
 
 .delivery-title {
 	font-family: 'BOWLER-Regular', sans-serif;
+
 	font-size: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #e30613;
 }
 
 .delivery-subtitle {
 	font-size: 19px;
+	max-width: 400px;
 }
 
 .delivery-image {
@@ -58,19 +61,20 @@
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	.delivery-title {
 		font-size: 18px;
 	}
 	.delivery-subtitle {
 		font-size: 12px;
+		max-width: 300px;
 	}
 	.delivery-block {
 		height: 350px;
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.delivery-title {
 		font-size: 14px;
 	}
@@ -78,28 +82,29 @@
 		font-size: 9px;
 	}
 	.delivery-block {
-		height: 300px;
+		height: 250px;
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.delivery-title {
 		font-size: 12px;
 	}
 	.delivery-subtitle {
 		font-size: 8px;
+		max-width: 200px;
 	}
 	.delivery-block {
 		height: 200px;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.delivery-title {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.delivery-subtitle {
-		font-size: 8px;
+		max-width: 150px;
 	}
 	.delivery-block {
 		height: 150px;
