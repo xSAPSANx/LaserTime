@@ -1,6 +1,6 @@
 import './index.scss'
 
-type propsPhoto = {
+interface propsPhoto {
 	photoOld: string
 	photoNew: string
 	title?: string
