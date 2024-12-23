@@ -31,9 +31,6 @@ export const BurgerModal: React.FC<BurgerModalProps> = ({ isMenuOpen, scrollToSe
 	return (
 		<div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
 			<nav className='mobile-menu-links'>
-				{/* <Link to='/' onClick={() => handleLinkClick('#about', offsets)}>
-					О нас
-				</Link> */}
 				<Link to='/' onClick={() => handleLinkClick('#features-block', offsets)}>
 					Преимущества
 				</Link>
@@ -41,7 +38,7 @@ export const BurgerModal: React.FC<BurgerModalProps> = ({ isMenuOpen, scrollToSe
 					Примеры работ
 				</Link>
 				<div className='adress neon'>
-					<img src='/assets/mapicon.svg' />
+					<img src='/assets/mapicon.svg' alt='Иконка карты' />
 					<a className='linkMap' href='https://yandex.ru/maps/-/CHAciX2J'>
 						г.Воронеж,
 						<br /> ул.Ленинградская, д.118
