@@ -42,7 +42,7 @@ export const Header = () => {
 				</div>
 				<div className='contacts'>
 					<div className='adress neon'>
-						<img src='/assets/mapicon.svg' />
+						<img src='/assets/mapicon.svg' alt='Иконка карты' />
 						<a className='linkMap' href='https://yandex.ru/maps/-/CHAciX2J'>
 							г.Воронеж,
 							<br /> ул.Ленинградская, д.118

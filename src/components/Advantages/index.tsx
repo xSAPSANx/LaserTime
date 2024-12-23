@@ -43,7 +43,7 @@ export const FeaturesBlock = () => {
 				<div className='feature-item' key={index}>
 					<img src={feature.icon} alt={feature.title} className='feature-icon' />
 					<div className='feature-content'>
-						<h3 className='feature-title'>{feature.title}</h3>
+						<h2 className='feature-title'>{feature.title}</h2>
 						<p className='feature-description'>{feature.description}</p>
 					</div>
 				</div>
