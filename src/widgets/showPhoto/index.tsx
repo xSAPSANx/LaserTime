@@ -12,12 +12,12 @@ interface propsPhoto {
 	heightNew?: string
 }
 
-export const ShowPhoto = ({ title, photoOld, photoNew, heightOld, altOld, altNew }: propsPhoto) => {
+export const ShowPhoto = ({ title, photoOld, photoNew, altOld, altNew }: propsPhoto) => {
 	return (
 		<div className='titleContainer'>
 			<h3 className={`titleServices ${!title ? 'no-title' : ''}`}>{title || ' '}</h3>
 			<div className='content'>
-				<img className='photoServices' src={photoOld} style={{ height: heightOld }} alt={altOld} />
+				<img className='photoServices' src={photoOld} alt={altOld} />
 				<div className='arrowBlock'>
 					<img className='arrow' src='/assets/arrowimage.svg' alt='Стрелочка' />
 					<img className='arrow' src='/assets/arrowimage.svg' alt='Стрелочка' />
