@@ -19,6 +19,29 @@ export const Services = () => {
 				altOld={'Старая загрязненная чаша с крышкой'}
 				altNew={'Очищенная старая чаша с крышкой'}
 			/>
+
+			<ShowPhoto
+				title={'Удаление ржавчины'}
+				photoOld={'/photo/corozionOld.webp'}
+				photoNew={'/photo/corozionNew.webp'}
+				altOld={'Поднос в ржавчине'}
+				altNew={'Поднос на половину очищенный'}
+				heightOld={'533.33px'}
+			/>
+			<ShowPhoto
+				title={'Удаление краски'}
+				photoOld={'/photo/groundOld.webp'}
+				photoNew={'/photo/groundNew.webp'}
+				altOld={'Стена в краске'}
+				altNew={'Стена очищенная от краски'}
+			/>
+			<ShowPhoto
+				photoOld={'/photo/paintOld.webp'}
+				photoNew={'/photo/paintNew.webp'}
+				altOld={'Стойка забора в краске'}
+				altNew={'Стойка забора очищенная от краски'}
+			/>
+
 			<ShowPhoto
 				title={'Детали автомобиля'}
 				photoOld={'/photo/engineOld.webp'}
@@ -32,6 +55,7 @@ export const Services = () => {
 				altOld={'Запчасть машины вся в масле '}
 				altNew={'Очищенная до блеска запчасть машины'}
 			/>
+
 			<ShowPhoto
 				title={'Инструменты'}
 				photoOld={'/photo/knifeOld.webp'}
